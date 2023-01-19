@@ -34,7 +34,8 @@ Examples
 ```
 
 ## TODO
- - PointData are not translated
- - CellData are not translated
+ - verify doAllCopyOff == ~doAllCopyOn
+ - set copyFieldFlags
+
 ## License
 serialize2json is made available under the Apache License, Version 2.0. For more details, see ./LICENSE.
