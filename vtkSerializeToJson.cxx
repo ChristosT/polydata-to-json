@@ -94,7 +94,7 @@ void AppendPoints(vtkNJson& json, vtkPoints* points)
 
   jsonPoints["name"] = "_points";
   jsonPoints["numberOfComponents"] = 3;
-  jsonPoints["size"] = points->GetNumberOfPoints();
+  jsonPoints["size"] = 3 * points->GetNumberOfPoints();
   jsonPoints["dataType"] = vtkDataTypeToString(points->GetDataType()) + "Array";
 
 #if 1
