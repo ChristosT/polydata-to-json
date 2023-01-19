@@ -73,12 +73,14 @@ std::string vtkDataTypeToString(int type)
       return "Float32";
     case VTK_TYPE_FLOAT64:
       return "Float64";
+    case VTK_TYPE_INT64:
+      std::cerr << "Int64 array is narrowed to Int32" << std::endl;
     case VTK_TYPE_INT32:
       return "Int32";
-    case VTK_TYPE_INT64:
-      return "Int64";
     case VTK_TYPE_UINT16:
       return "UInt16";
+    case VTK_TYPE_UINT64:
+      std::cerr << "UInt64 array is narrowed to Int32" << std::endl;
     case VTK_TYPE_UINT32:
       return "UInt32";
     default:
