@@ -69,10 +69,8 @@ int main(int argc, char** argv)
   app.add_option("--file,-f", args.filename, "Polydata file in legacy vtk or XML format")
     ->required()
     ->check(CLI::ExistingFile);
-  app
-    .add_option("--format,-t", args.format,
-      "Serialization format. 'ascii' is the default. Available options are \n"
-      " 'ascii', 'bson', 'cbor', 'messagePack', 'ubjson'")
+  app.add_option("--format,-t", args.format, "Serialization format.")
+    ->default_str("ascii")
     ->check(CLI::IsMember({ "ascii", "bson", "cbor", "messagePack", "ubjson" }));
   app.add_option(
     "--output,-o", args.output, "Output file, if omitted the output will be printed to stdout");

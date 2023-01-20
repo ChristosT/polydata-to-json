@@ -22,9 +22,8 @@ Options:
   -h,--help                   Print this help message and exit
   -f,--file TEXT:FILE REQUIRED
                               Polydata file in legacy vtk or XML format
-  -t,--format TEXT:{ascii,bson,cbor,messagePack,ubjson}
-                              Serialization format. 'ascii' is the default. Available options are
-                               'ascii', 'bson', 'cbor', 'messagePack', 'ubjson'
+  -t,--format TEXT:{ascii,bson,cbor,messagePack,ubjson}=ascii
+                              Serialization format.
   -o,--output TEXT            Output file, if omitted the output will be printed to stdout
 ```
 Examples
